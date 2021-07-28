@@ -58,7 +58,7 @@ describe('supports http with nodejs', function () {
     });
   });
 
-  it.skip('should parse the timeout property', function (done) {
+  it('should parse the timeout property', function (done) {
 
     server = http.createServer(function (req, res) {
       setTimeout(function () {
@@ -87,7 +87,7 @@ describe('supports http with nodejs', function () {
     });
   });
 
-  it.skip('should respect the timeout property', function (done) {
+  it('should respect the timeout property', function (done) {
 
     server = http.createServer(function (req, res) {
       setTimeout(function () {
