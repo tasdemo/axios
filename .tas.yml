@@ -1,6 +1,5 @@
 --- 
 blacklist: 
-  - "test/unit/adapters/http.js##supports http with nodejs##should redirect"
   - "test/unit/adapters/http.js##supports http with nodejs##should allow passing JSON"
   - "test/unit/adapters/http.js##supports http with nodejs##should support sockets"
 coverageThreshold: 
@@ -11,13 +10,11 @@ coverageThreshold:
 framework: mocha
 postmerge: 
   pattern: 
-    - test/unit/adapters/**/*.js
+    - test/unit/**/*.js
 postrun: 
   - "node --version"
 premerge: 
-  - test/unit/adapters/**/*.js
+  - test/unit/**/*.js
 prerun: 
   - "npm i"
-stability: 
-  consecutive_runs: 5
 version: 2.0
