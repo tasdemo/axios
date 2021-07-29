@@ -1,7 +1,6 @@
 --- 
 blacklist: 
   - "test/unit/adapters/http.js##supports http with nodejs##should allow passing JSON"
-  - "test/unit/adapters/http.js##supports http with nodejs##should support sockets"
 coverageThreshold: 
   branches: 80
   functions: 80
