@@ -1,32 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@tasdemo 
-tasdemo
-/
-axios
-forked from axios/axios
-0
-08.5k
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-axios/test/unit/adapters/http2.js /
-@tasdemo
-tasdemo Create http2.js
-Latest commit 434c933 5 days ago
- History
- 1 contributor
-971 lines (874 sloc)  28.8 KB
-  
+
 var axios = require('../../../index');
 var http = require('http');
 var https = require('https');
