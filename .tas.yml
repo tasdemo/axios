@@ -1,4 +1,5 @@
---- 
+---
+framework: mocha
 blacklist: 
   - "test/unit/adapters/http.js##supports http with nodejs##should allow passing JSON"
 coverageThreshold: 
@@ -6,14 +7,14 @@ coverageThreshold:
   functions: 80
   lines: 80
   statements: 80
-framework: mocha
-postmerge: 
+postMerge: 
   pattern: 
     - test/unit/**/*.js
-postrun: 
+preMerge: 
+  pattern: 
+    - test/unit/**/*.js
+postRun: 
   - "node --version"
-premerge: 
-  - test/unit/**/*.js
-prerun: 
+preRun: 
   - "npm i"
 version: 2.0
