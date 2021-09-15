@@ -950,6 +950,18 @@ describe('supports http with nodejs', function () {
       });
     });
   });
+  
+  it('My new test', function (done) {
+    server = http.createServer(function (req, res) {
+      assert.equal(req.headers["user-agent"], 'axios/' + pkg.version);
+      res.end();
+    }).listen(4444, function () {
+      axios.get('http://localhost:4444/'
+      ).then(function (res) {
+        done();
+      });
+    });
+  });
 
   it('should omit a user-agent if one is explicitly disclaimed', function (done) {
     server = http.createServer(function (req, res) {
