@@ -34,7 +34,8 @@ module.exports = function(config) {
       'SAUCE_IE',
       'SAUCE_EDGE',
       'SAUCE_IOS',
-      'SAUCE_ANDROID'
+      'SAUCE_ANDROID',
+      'SAUCE_KETCHUP'
     ];
 
     options.forEach(function(opt) {
