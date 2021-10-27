@@ -17,4 +17,3 @@ postRun:
   - "node --version"
 preRun: 
   - "npm i"
-version: 2.0
