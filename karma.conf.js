@@ -7,6 +7,7 @@
 'use strict';
 
 var webpack = require('webpack');
+const id = 'XXXX';
 
 function createCustomLauncher(browser, version, platform) {
   return {
