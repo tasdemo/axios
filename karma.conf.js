@@ -3,7 +3,6 @@
 /* eslint-disable func-names */
 // Karma configuration
 // Generated on Fri Aug 15 2014 23:11:13 GMT-0500 (CDT)
-// some other comment
 
 'use strict';
 
