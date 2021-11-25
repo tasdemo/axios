@@ -83,7 +83,7 @@ describe('supports http with nodejs', function () {
         assert.equal(success, false, 'request should not succeed');
         assert.equal(failure, true, 'request should fail');
         assert.equal(error.code, 'ECONNABORTED');
-        assert.equal(error.message, 'timeout of 250ms exceeded');
+        assert.equal(error.message, 'timeout of 250ms exceeded [remove this]');
         done();
       }, 300);
     });
