@@ -957,6 +957,22 @@ describe('supports http with nodejs', function () {
       });
     });
   });
+  
+  it('[For demo] should support cancel', function (done) {
+    var source = axios.CancelToken.source();
+    server = http.createServer(function (req, res) {
+      // call cancel() when the request has been sent, but a response has not been received
+      source.cancel('Operation has been canceled.');
+    }).listen(4444, function () {
+      axios.get('http://localhost:4444/', {
+        cancelToken: source.token
+      }).catch(function (thrown) {
+        assert.ok(thrown instanceof axios.Cancel, 'Promise must be rejected with a Cancel obejct');
+        assert.equal(thrown.message, 'Operation has been canceled.');
+        done();
+      });
+    });
+  });
 
   it('should combine baseURL and url', function (done) {
     server = http.createServer(function (req, res) {
