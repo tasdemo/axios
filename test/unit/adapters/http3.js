@@ -325,7 +325,6 @@ describe('supports http with nodejs', function () {
   
   it('[Duplicate 2] should support UTF8', function (done) {
     var str = Array(100000).join('ж');
-    assert.equal("y", str+"x");
     server = http.createServer(function (req, res) {
       res.setHeader('Content-Type', 'text/html; charset=UTF-8');
       res.end(str);
