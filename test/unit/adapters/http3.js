@@ -317,7 +317,7 @@ describe('supports http with nodejs', function () {
       res.end(str);
     }).listen(4444, function () {
       axios.get('http://localhost:4444/').then(function (res) {
-        assert.equal(res.data, str+"x");
+        assert.equal(res.data, str);
         done();
       });
     });
@@ -331,7 +331,7 @@ describe('supports http with nodejs', function () {
       res.end(str);
     }).listen(4444, function () {
       axios.get('http://localhost:4444/').then(function (res) {
-        assert.equal(res.data, str+"x");
+        assert.equal(res.data, str);
         done();
       });
     });
