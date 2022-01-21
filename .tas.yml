@@ -14,7 +14,9 @@ postMerge:
 preMerge: 
   pattern: 
     - test/unit/**/*.js
-postRun: 
-  - "node --version"
-preRun: 
-  - "npm i"
+postRun:
+  command: 
+    - "node --version"
+preRun:
+  command:
+    - "npm i"
