@@ -2,7 +2,6 @@
 framework: mocha
 blocklist: 
   - "test/unit/adapters/http3.js##supports http with nodejs##should allow passing JSON"
-  - "test/unit/adapters/http3.js##supports http with nodejs##should allow passing JSON with BOM"
 coverageThreshold: 
   branches: 80
   functions: 80
