@@ -139,18 +139,22 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
-
+  
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine-ajax', 'jasmine', 'sinon'],
 
 
+    
+    
     // list of files / patterns to load in the browser
     files: [
       'test/specs/__helpers.js',
       'test/specs/**/*.spec.js'
     ],
 
+    
+    
 
     // list of files to exclude
     exclude: [],
@@ -193,6 +197,8 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
 
+    
+    
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: browsers,
