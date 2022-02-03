@@ -10,7 +10,7 @@
 [![gitter chat](https://img.shields.io/gitter/room/mzabriskie/axios.svg?style=flat-square)](https://gitter.im/mzabriskie/axios)
 [![code helpers](https://www.codetriage.com/axios/axios/badges/users.svg)](https://www.codetriage.com/axios/axios)
 
-A Promise based HTTP client for the browser and node.js
+A Promise based HTTP Demo change client for the browser and node.js
 
 > New axios docs website: [click here](https://axios-http.com/)
 
