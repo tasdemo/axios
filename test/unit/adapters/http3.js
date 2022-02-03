@@ -474,7 +474,7 @@ describe('supports http with nodejs', function () {
         url: '/'
       })
         .then(function (resp) {
-          assert.equal(resp.status, 404);
+          assert.equal(resp.status, 200);
           assert.equal(resp.statusText, 'OK');
           done();
         })
