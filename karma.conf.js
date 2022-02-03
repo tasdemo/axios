@@ -4,12 +4,9 @@
 // Karma configuration
 // Generated on Fri Aug 15 2014 23:11:13 GMT-0500 (CDT)
 // omsfsf
-
 'use strict';
-
 var webpack = require('webpack');
 const id = 'YYYY';
-
 function createCustomLauncher(browser, version, platform) {
   return {
     base: 'SauceLabs',
