@@ -125,6 +125,8 @@ describe('supports http with nodejs', function () {
       lastName: 'Flintstone',
       emailAddr: 'fred@example.com'
     };
+    
+    
 
     server = http.createServer(function (req, res) {
       res.setHeader('Content-Type', 'application/json');
